@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <button onclick="sendOption('Renovation Packages')">Renovation Packages</button>
                         <button onclick="sendOption('Smart Home Info')">Smart Home Info</button>
                         <button onclick="sendOption('Get a Quote')">Get a Quote</button>
+                        <button onclick="sendOption('Chat on WhatsApp')" style="background-color: #25D366; color: white; border: none;">Chat on WhatsApp</button>
                     </div>
                 </div>
             </div>
@@ -56,6 +57,11 @@ function toggleChat() {
 }
 
 function sendOption(option) {
+    if (option === 'Chat on WhatsApp') {
+        window.open('https://wa.me/6512345678?text=Hi%20LuxeHome%2C%20I%27m%20interested%20in%20your%20services.', '_blank');
+        return;
+    }
+
     addMessage(option, 'user-message');
     showTypingIndicator();
 
