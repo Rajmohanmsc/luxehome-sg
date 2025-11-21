@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | LuxeHome SG</title>
+    <meta name="description" content="Get in touch with LuxeHome SG for your renovation or smart home project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">LuxeHome SG</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="smart-home.html">Smart Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-contact"
+        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-bg.png'); height: 60vh; display: flex; align-items: center;">
+        <div class="container text-center">
+            <h1 class="text-white">Start Your Transformation</h1>
+            <p class="text-white" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Contact us today for a
+                free consultation and quote.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="grid-2">
+                <!-- Contact Info -->
+                <div>
+                    <h2>Get In Touch</h2>
+                    <p>Ready to discuss your dream home? Fill out the form or visit our showroom.</p>
+
+                    <div style="margin-top: 2rem;">
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 class="text-secondary">Showroom Address</h4>
+                            <p>123 Orchard Road, #08-01<br>Singapore 238888</p>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 class="text-secondary">Opening Hours</h4>
+                            <p>Mon - Fri: 10am - 8pm<br>Sat - Sun: 11am - 6pm</p>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 class="text-secondary">Contact Details</h4>
+                            <p>Email: hello@luxehome.sg<br>Phone: +65 6789 0123</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm"
+                        onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly.');">
+                        <div style="margin-bottom: 1rem;">
+                            <label for="name"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
+                            <input type="text" id="name" required
+                                style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="email"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
+                            <input type="email" id="email" required
+                                style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="property"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Property
+                                Type</label>
+                            <select id="property"
+                                style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                                <option>HDB</option>
+                                <option>Condo</option>
+                                <option>Landed</option>
+                                <option>Commercial</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="message"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                            <textarea id="message" rows="4" required
+                                style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%; border: none;">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo text-white" style="margin-bottom: 1.5rem;">LuxeHome SG</div>
+                    <p style="opacity: 0.7;">Premium renovation and smart home solutions for the modern
+                        Singaporean lifestyle.</p>
+                </div>
+                <div>
+                    <h4 class="text-white">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="smart-home.html">Smart Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white">Contact</h4>
+                    <p style="opacity: 0.8;">123 Orchard Road, #08-01<br>Singapore 238888</p>
+                    <p style="opacity: 0.8; margin-top: 1rem;">hello@luxehome.sg<br>+65 6789 0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 LuxeHome SG. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
